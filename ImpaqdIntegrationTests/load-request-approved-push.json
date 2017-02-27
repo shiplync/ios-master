@@ -1,0 +1,10 @@
+{
+    "aps" : {
+        "alert" : "Your request has been approved!",
+        "badge" : 0,
+        "sound" : "default"
+    },
+    "shipment_id" : 1,
+    "type" : "load-request-approved"
+}
+

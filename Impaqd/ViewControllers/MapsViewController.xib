@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapsViewController">
+            <connections>
+                <outlet property="mapView" destination="wJc-iq-S7J" id="HrA-5s-jEa"/>
+                <outlet property="pagingSegmentedControl" destination="7Ly-yj-iqC" id="u76-wU-fOr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wJc-iq-S7J">
+                    <rect key="frame" x="0.0" y="-8" width="600" height="608"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="hoG-ct-MYU"/>
+                    </connections>
+                </mapView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ly-yj-iqC">
+                    <rect key="frame" x="8" y="564" width="123" height="29"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <segments>
+                        <segment title="Previous"/>
+                        <segment title="Next"/>
+                    </segments>
+                    <connections>
+                        <action selector="pagingSegmentedControlTapped:" destination="-1" eventType="valueChanged" id="tdp-JJ-4Mh"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wJc-iq-S7J" secondAttribute="trailing" id="6an-UR-iVB"/>
+                <constraint firstItem="wJc-iq-S7J" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-8" id="8s6-VA-Y2S"/>
+                <constraint firstAttribute="bottom" secondItem="7Ly-yj-iqC" secondAttribute="bottom" constant="8" id="8vr-Ra-4NG"/>
+                <constraint firstItem="wJc-iq-S7J" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="H8B-1x-XlD"/>
+                <constraint firstItem="7Ly-yj-iqC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="RaF-2N-FE3"/>
+                <constraint firstAttribute="bottom" secondItem="wJc-iq-S7J" secondAttribute="bottom" id="XgX-Yd-QPx"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

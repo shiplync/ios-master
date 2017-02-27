@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3D46BDB853D4F4677DDFBCF86724FE48C87F7671",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B02F8AEB-B316-4829-B4AE-517BAD424B4D" : 0,
+    "3D46BDB853D4F4677DDFBCF86724FE48C87F7671" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "145E5F2E-D356-49D3-9A90-E2F264A1B55B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B02F8AEB-B316-4829-B4AE-517BAD424B4D" : "ios-impaqd",
+    "3D46BDB853D4F4677DDFBCF86724FE48C87F7671" : "mercedes-ios"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Impaqd",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Impaqd.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Impaqd\/ios-impaqd.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3D46BDB853D4F4677DDFBCF86724FE48C87F7671"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Impaqd\/ios-impaqd.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B02F8AEB-B316-4829-B4AE-517BAD424B4D"
+    }
+  ]
+}

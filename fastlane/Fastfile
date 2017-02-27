@@ -1,0 +1,87 @@
+# Customise this file, documentation can be found here:
+# https://github.com/krausefx/fastlane#customise-the-fastfile
+
+# Change the syntax highlighting to Ruby
+
+# All lines starting with a # are ignored when running `fastlane`
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+fastlane_version "0.6.1"
+
+before_all do
+  ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"
+
+  # sh "./customShellScript.sh"
+
+  cocoapods
+
+  # increment_build_number
+
+  # ipa
+
+  # xctool
+end
+
+lane :build_for_test do
+  xcodebuild sdk: 'iphonesimulator', scheme: 'Impaqd', configuration: 'Debug', destination: "platform=iOS Simulator,name=iPhone 6,OS=8.2"
+end
+
+lane :test do
+  xctest(
+    sdk: 'iphonesimulator',
+    scheme: 'Impaqd',
+    configuration: 'Debug',
+    destination: 'platform=iOS Simulator,name=iPhone 6,OS=8.2',
+    report_formats: [ 'html', 'junit' ],
+    report_screenshots: true
+  )
+  # junit = File.read("../build/reports/junit.xml")
+  # test_results = junit.split("\n")[1]
+  # slack({
+  #   message: "Test Results",
+  #   channel: 'coding',
+  #   success: true,
+  #   payload: {
+  #     'Build Date' => Time.new.to_s,
+  #     'Results' => test_results
+  #   },
+  #   default_payloads: []
+  # })
+end
+
+lane :beta do
+  ipa
+  snapshot
+  sigh
+  deliver :skip_deploy, :beta
+  # sh "your_script.sh"
+end
+
+lane :deploy do
+  ipa
+  snapshot
+  sigh
+  deliver :skip_deploy, :force
+  # frameit
+end
+
+lane :inhouse do
+  # insert your code here
+end
+
+# You can define as many lanes as you want
+
+# after_all do |lane|
+#   # This block is called, only if the executed lane was successful
+#   slack({
+#     message: "Successfully deployed new App Update (not really).",
+#     success: true,
+#     channel: 'coding'
+#   })
+# end
+
+
+error do |lane, exception|
+  # Something bad happened
+end

@@ -1,0 +1,13 @@
+{
+    "company_name" : "Trucks and Cats",
+    "created_at"   : "2015-04-27T21:58:34.455Z",
+    "dot"          : 9172132,
+    "id"           : 10,
+    "insurance"    : null,
+    "is_fleet"     : 0,
+    "max_requests" : 1,
+    "mc"           : null,
+    "rejected"     : 0,
+    "updated_at"   : "2015-04-27T21:58:43.005Z",
+    "verified"     :  1
+}

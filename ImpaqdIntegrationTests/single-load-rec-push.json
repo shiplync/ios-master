@@ -1,0 +1,10 @@
+{
+    "aps" : {
+	"alert" : "There's a new shipment going from <CITY>, <STATE> to <CITY>, <STATE> at a price of $<PAYOUT>",
+	"badge" : 0,
+	"sound" : "default"
+    },
+    "shipment_id" : 1,
+    "type" : "single-load-rec"
+}
+

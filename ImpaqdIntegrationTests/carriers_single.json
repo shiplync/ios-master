@@ -1,0 +1,22 @@
+{
+    "allow_notifications" : 1,
+    "app_pin" : "0000",
+    "created_at" : "2015-04-29T17:29:02.267Z",
+    "device_token" : "<73696d75 6c61746f 722d7265 6d6f7465 2d6e6f74 69666963 6174696f 6e3d3130 2e313932 2e382e33 3a393933 30>",
+    "email" : "test.carrier@example.com",
+    "first_name" : "Test",
+    "id" : 1,
+    "is_tester" : 0,
+    "last_location" : "POINT (-74.1448840000000047 40.6874650000000031)",
+    "last_location_timestamp" : "2015-05-05T20:36:47Z",
+    "last_name" : "Carrier",
+    "mcdot" : 1234567,
+    "phone" : 1234567834,
+    "photo" : null,
+    "platform" : 3,
+    "rejected" : 0,
+    "updated_at" : "2015-05-05T20:36:47.859Z",
+    "user" : 2,
+    "vehicle_type" : 1,
+    "verified" : 1
+}
